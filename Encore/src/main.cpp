@@ -846,7 +846,7 @@ int main(int argc, char *argv[]) {
 	//SetTraceLogLevel(LOG_NONE);
 
 	// 800 , 600
-	InitWindow(1, 1, "Encore");
+	InitWindow(800, 600, "Encore");
 	SetWindowState(FLAG_MSAA_4X_HINT);
 
 
@@ -2732,6 +2732,7 @@ int main(int argc, char *argv[]) {
 				// IMAGE BACKGROUNDS??????
 				ClearBackground(BLACK);
 				player.songToBeJudged = songList.songs[curPlayingSong];
+				/*
 				if (IsWindowResized() || notes_tex.texture.width != GetScreenWidth()
 						|| notes_tex.texture.height != GetScreenHeight()) {
 					UnloadRenderTexture(notes_tex);
@@ -2760,6 +2761,7 @@ int main(int argc, char *argv[]) {
 					GenTextureMipmaps(&smasher_tex.texture);
 					SetTextureFilter(smasher_tex.texture, TEXTURE_FILTER_ANISOTROPIC_4X);
 				}
+				*/
 
 				float scorePos = u.RightSide;
 				float scoreY = u.hpct(0.15f);

@@ -350,8 +350,8 @@ void gameplayRenderer::RenderNotes(Player& player, Chart& curChart, double time,
 	EndTextureMode();
 
 	SetTextureWrap(notes_tex.texture,TEXTURE_WRAP_CLAMP);
-	notes_tex.texture.width = (float)GetScreenWidth();
-	notes_tex.texture.height = (float)GetScreenHeight();
+	// notes_tex.texture.width = (float)GetScreenWidth();
+	// notes_tex.texture.height = (float)GetScreenHeight();
 	DrawTexturePro(notes_tex.texture, {0,0,(float)GetScreenWidth(), (float)-GetScreenHeight() },{ 0, 0, (float)GetScreenWidth(), (float)GetScreenHeight() }, {renderPos,highwayLevel}, 0, WHITE );
 }
 
@@ -690,8 +690,8 @@ void gameplayRenderer::RenderClassicNotes(Player& player, Chart& curChart, doubl
 	EndTextureMode();
 
 	SetTextureWrap(notes_tex.texture,TEXTURE_WRAP_CLAMP);
-	notes_tex.texture.width = (float)GetScreenWidth();
-	notes_tex.texture.height = (float)GetScreenHeight();
+	// notes_tex.texture.width = (float)GetScreenWidth();
+	// notes_tex.texture.height = (float)GetScreenHeight();
 	DrawTexturePro(notes_tex.texture, {0,0,(float)GetScreenWidth(), (float)-GetScreenHeight() },{ 0, 0, (float)GetScreenWidth(), (float)GetScreenHeight() }, {renderPos,highwayLevel}, 0, WHITE );
 }
 
@@ -759,8 +759,8 @@ void gameplayRenderer::RenderHud(Player& player, RenderTexture2D& hud_tex, float
 	EndTextureMode();
 
 	SetTextureWrap(hud_tex.texture,TEXTURE_WRAP_CLAMP);
-	hud_tex.texture.width = (float)GetScreenWidth();
-	hud_tex.texture.height = (float)GetScreenHeight();
+	// hud_tex.texture.width = (float)GetScreenWidth();
+	// hud_tex.texture.height = (float)GetScreenHeight();
 	DrawTexturePro(hud_tex.texture, {0,0,(float)GetScreenWidth(), (float)-GetScreenHeight() },{ 0, 0, (float)GetScreenWidth(), (float)GetScreenHeight() }, {renderPos,highwayLevel}, 0, WHITE );
 }
 
@@ -1018,8 +1018,8 @@ void gameplayRenderer::RenderExpertHighway(Player& player, Song song, double tim
 	EndTextureMode();
 
 	SetTextureWrap(highway_tex.texture,TEXTURE_WRAP_CLAMP);
-	highway_tex.texture.width = (float)GetScreenWidth();
-	highway_tex.texture.height = (float)GetScreenHeight();
+	// highway_tex.texture.width = (float)GetScreenWidth();
+	// highway_tex.texture.height = (float)GetScreenHeight();
 	DrawTexturePro(highway_tex.texture, {0,0,(float)GetScreenWidth(), (float)-GetScreenHeight() },{ 0, 0, (float)GetScreenWidth(), (float)GetScreenHeight() }, {renderPos,highwayLevel}, 0, WHITE );
 
 	BeginBlendMode(BLEND_ALPHA);
@@ -1050,8 +1050,8 @@ void gameplayRenderer::RenderExpertHighway(Player& player, Song song, double tim
 	EndMode3D();
 	EndTextureMode();
 	SetTextureWrap(highwayStatus_tex.texture,TEXTURE_WRAP_CLAMP);
-	highwayStatus_tex.texture.width = (float)GetScreenWidth();
-	highwayStatus_tex.texture.height = (float)GetScreenHeight();
+	// highwayStatus_tex.texture.width = (float)GetScreenWidth();
+	// highwayStatus_tex.texture.height = (float)GetScreenHeight();
 	DrawTexturePro(highwayStatus_tex.texture, {0,0,(float)GetScreenWidth(), (float)-GetScreenHeight() },{ 0, 0, (float)GetScreenWidth(), (float)GetScreenHeight() }, {renderPos,highwayLevel}, 0, WHITE );
 
 	BeginTextureMode(smasher_tex);
@@ -1106,8 +1106,8 @@ void gameplayRenderer::RenderExpertHighway(Player& player, Song song, double tim
 	EndMode3D();
 	EndTextureMode();
 	SetTextureWrap(smasher_tex.texture,TEXTURE_WRAP_CLAMP);
-	smasher_tex.texture.width = (float)GetScreenWidth();
-	smasher_tex.texture.height = (float)GetScreenHeight();
+	// smasher_tex.texture.width = (float)GetScreenWidth();
+	// smasher_tex.texture.height = (float)GetScreenHeight();
 	DrawTexturePro(smasher_tex.texture, {0,0,(float)GetScreenWidth(), (float)-GetScreenHeight() },{ 0, 0, (float)GetScreenWidth(), (float)GetScreenHeight() }, {renderPos,highwayLevel}, 0, WHITE );
 
 
@@ -1177,8 +1177,8 @@ void gameplayRenderer::RenderEmhHighway(Player& player, Song song, double time, 
 	EndTextureMode();
 
 	SetTextureWrap(highway_tex.texture,TEXTURE_WRAP_CLAMP);
-	highway_tex.texture.width = (float)GetScreenWidth();
-	highway_tex.texture.height = (float)GetScreenHeight();
+	// highway_tex.texture.width = (float)GetScreenWidth();
+	// highway_tex.texture.height = (float)GetScreenHeight();
 	DrawTexturePro(highway_tex.texture, {0,0,(float)GetScreenWidth(), (float)-GetScreenHeight() },{ 0, 0, (float)GetScreenWidth(), (float)GetScreenHeight() }, {0,highwayLevel}, 0, WHITE );
 
 }
